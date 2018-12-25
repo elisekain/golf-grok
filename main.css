@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Belgrano", serif;
+  background-color: #dddddd;
+  padding: 1%;
+  margin: 0;
+}
+
+#holeCount {
+  text-align: center;
+  padding: 6%;
+}
+
+#holeCount h2 {
+  font-size: 2rem;
+}
+
+#holeCount span {
+  font-size: 10rem;
+  line-height: 6rem;
+}
+
+#holeCount span,
+#dataSummaries span {
+  font-family: "Belgrano", serif;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 1%;
+  background-color: #bff1e1;
+}
+
+#rounds {
+  text-align: center;
+  background-color: #222222;
+  padding: 5% 10%;
+  color: white;
+}
+
+#rounds div {
+  display: inline-block;
+  width: 22%;
+  padding: 10%;
+  border: solid 3px #dddddd;
+  margin: 0 1%;
+}
+
+#dataSummaries ul {
+  list-style: none;
+}
+
+#dataSummaries li {
+  padding: 5%;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+#dataSummaries span {
+  font-size: 3rem;
+  line-height: 1.6rem;
+}
