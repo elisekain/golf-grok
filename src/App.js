@@ -1,81 +1,21 @@
 import React, { Component } from "react";
 import "./App.css";
+import GolfGrokHeader from "./components/GolfGrokHeader.jsx";
+import HoleCountHero from "./components/HoleCountHero.jsx";
+import Rounds from "./components/Rounds.jsx";
+import DataSummaries from "./components/DataSummaries.jsx";
 
 class App extends Component {
   render() {
     return (
       <body>
-        <header>
-          <h1>golf / grok</h1>
-        </header>
+        <GolfGrokHeader />
 
-        {/* total hole count */}
-        <section id="holeCount">
-          <h2>
-            <span>0</span>
-            <br />
-            holes played in 2019
-          </h2>
-        </section>
+        <HoleCountHero holeCount={0} />
 
-        {/* rounds */}
-        <section id="rounds">
-          <div>X</div>
-          <div>X</div>
-          <div>X</div>
-          <div>X</div>
-        </section>
+        <Rounds />
 
-        {/* overall data summaries */}
-        <section id="dataSummaries">
-          <ul>
-            <li>
-              <span>0</span>
-              <br />
-              yards
-            </li>
-            <li>
-              <span>0</span>
-              <br />
-              courses played
-            </li>
-            <li>
-              <span>0</span>
-              <br />
-              birdies
-            </li>
-            <li>
-              <span>0</span>
-              <br />
-              eagles
-            </li>
-            <li>
-              <span>0</span>
-              <br />
-              lessons
-            </li>
-            <li>
-              <span>0</span>
-              <br />
-              bottles of sunscreen
-            </li>
-            <li>
-              <span>0</span>
-              <br />
-              golf gloves
-            </li>
-            <li>
-              <span>?</span>
-              <br />
-              maximum temperature
-            </li>
-            <li>
-              <span>?</span>
-              <br />
-              minimum temperature
-            </li>
-          </ul>
-        </section>
+        <DataSummaries />
       </body>
     );
   }
